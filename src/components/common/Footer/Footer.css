@@ -54,7 +54,7 @@
 
 .footer-col ul li {
   margin-bottom: 12px;
-  font-size: 14px;
+  font-size: 15px;
   color: #9fb2c7;
   cursor: pointer;
   transition: color 0.25s ease;
@@ -153,7 +153,7 @@
   height: 38px;
   border-radius: 50%;
   background: #ffffff;
-  color: #0b2c4a;
+  color: #1e6fbb;
 
   display: flex;
   align-items: center;
@@ -178,7 +178,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  transition: width 0.35s ease, height 0.35s ease;
+  transition: width 0.5s ease, height 0.5s ease;
 }
 
 /* HOVER EFFECT */
@@ -191,7 +191,7 @@
 .social svg {
   position: relative;
   z-index: 1;
-  transition: color 0.9s ease;
+  transition: color 0.3s ease;
 }
 
 /* ICON COLOR CHANGE */

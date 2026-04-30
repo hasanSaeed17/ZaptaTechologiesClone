@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-col about">
           <img src={logo} alt="logo" className="footer-logo" />
 
-          <p>
+          <p style={{width:'300px'}}>
             ZAPTA Technologies is a leading software design and development company working
             in HealthCare, FinTech, Supply Chain Management, Education, Real Estate,
             eCommerce, Compliance Management, and Logistics domains. We are specialized
