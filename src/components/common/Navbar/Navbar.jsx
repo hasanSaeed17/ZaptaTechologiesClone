@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../../assets/logo.svg";
 
@@ -10,8 +11,10 @@ import productIcon from "../../../assets/product.svg";
 import mvpIcon from "../../../assets/mvp.svg";
 
 const Navbar = () => {
-  const [active, setActive] = useState("home");
   const [showDropdown, setShowDropdown] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <header className="navbar">
@@ -19,21 +22,20 @@ const Navbar = () => {
 
         {/* LOGO */}
         <div className="logo">
-          <img src={logo} alt="Zapta Technologies" />
+          <Link to="/">
+            <img src={logo} alt="Zapta Technologies" />
+          </Link>
         </div>
 
         {/* NAV */}
         <nav className="nav">
           <ul>
 
-            <li
-              className={active === "home" ? "active" : ""}
-              onClick={() => setActive("home")}
-            >
-              Home
+            <li className={isActive("/") ? "active" : ""}>
+              <Link to="/">Home</Link>
             </li>
 
-            {/* SERVICES */}
+            {/* SERVICES (no route change here unless you want one) */}
             <li
               className="services"
               onMouseEnter={() => setShowDropdown(true)}
@@ -64,7 +66,7 @@ const Navbar = () => {
                     <img src={uiuxIcon} alt="" className="icon" />
                     <div>
                       <h4>UI UX <span>Design</span></h4>
-                      <p>Creating engaging UI UX designs that enhance user experience and satisfaction.</p>
+                      <p>Creating engaging UI UX designs that enhance user experience.</p>
                     </div>
                   </div>
 
@@ -72,7 +74,7 @@ const Navbar = () => {
                     <img src={aimlIcon} alt="" className="icon" />
                     <div>
                       <h4>AI/ML <span>Applications</span></h4>
-                      <p>Developing innovative AI/ML applications to transform your business processes.</p>
+                      <p>Developing innovative AI/ML applications.</p>
                     </div>
                   </div>
 
@@ -80,7 +82,7 @@ const Navbar = () => {
                     <img src={productIcon} alt="" className="icon" />
                     <div>
                       <h4>Product <span>Scope</span></h4>
-                      <p>Defining product scope to clarify features and funtionalities for success.</p>
+                      <p>Defining product scope for success.</p>
                     </div>
                   </div>
 
@@ -88,7 +90,7 @@ const Navbar = () => {
                     <img src={mvpIcon} alt="" className="icon" />
                     <div>
                       <h4>MVP <span>Development</span></h4>
-                      <p>Fast-track your ideas with our comprehensive MVP development services.</p>
+                      <p>Fast-track your ideas with MVP services.</p>
                     </div>
                   </div>
 
@@ -96,32 +98,20 @@ const Navbar = () => {
               </div>
             </li>
 
-            <li
-              className={active === "projects" ? "active" : ""}
-              onClick={() => setActive("projects")}
-            >
-              Projects
+            <li className={isActive("/projects") ? "active" : ""}>
+              <Link to="/projects">Projects</Link>
             </li>
 
-            <li
-              className={active === "about" ? "active" : ""}
-              onClick={() => setActive("about")}
-            >
-              About Us
+            <li className={isActive("/about") ? "active" : ""}>
+              <Link to="/about">About Us</Link>
             </li>
 
-            <li
-              className={active === "blogs" ? "active" : ""}
-              onClick={() => setActive("blogs")}
-            >
-              Blogs
+            <li className={isActive("/blogs") ? "active" : ""}>
+              <Link to="/blogs">Blogs</Link>
             </li>
 
-            <li
-              className={active === "careers" ? "active" : ""}
-              onClick={() => setActive("careers")}
-            >
-              Careers
+            <li className={isActive("/careers") ? "active" : ""}>
+              <Link to="/careers">Careers</Link>
             </li>
 
           </ul>

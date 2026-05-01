@@ -42,11 +42,25 @@
   transition: color 0.3s ease;
 }
 
+/* ✅ REMOVE DEFAULT LINK STYLING */
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+/* ✅ ensure proper spacing for link */
+.nav li a {
+  position: relative;
+  padding: 4px 0;
+}
+
 .nav li.active {
   color: #0d5ea6;
 }
 
-.nav li:hover {
+/* ✅ FIX hover behavior */
+.nav li:hover a {
   color: #111;
 }
 
@@ -79,9 +93,9 @@
 /* DROPDOWN */
 .dropdown {
   position: absolute;
-  top: 65px; /* ✅ gap added */
+  top: 65px;
   left: -480px;
-  width: 760px; /* ✅ wider */
+  width: 760px;
 
   background: #ffffff;
   border-radius: 20px;
@@ -105,7 +119,7 @@
 .dropdown-item {
   display: flex;
   gap: 20px;
-  padding: 14px 14px; /* ✅ reduced */
+  padding: 14px 14px;
   border-radius: 14px;
 
   background: #ffffff;
@@ -113,6 +127,7 @@
 
   transition: all 0.3s ease;
 }
+
 .dropdown.show {
   opacity: 1;
   visibility: visible;
