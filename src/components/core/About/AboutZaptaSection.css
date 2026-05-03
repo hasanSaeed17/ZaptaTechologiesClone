@@ -1,0 +1,55 @@
+.about-zapta {
+  background-color: #f3f3f3;
+  padding: 60px 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* LEFT SIDE */
+.about-left {
+  flex: 1;
+  max-width: 720px;
+}
+
+.about-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-title span {
+  color: #1e73be; /* blue tone from image */
+}
+
+.about-text {
+  font-size: 15.5px;
+  line-height: 1.75;
+  color: #555;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+/* RIGHT SIDE */
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-right img {
+  width: 100%;
+  max-width: 520px;
+  height: 520px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
