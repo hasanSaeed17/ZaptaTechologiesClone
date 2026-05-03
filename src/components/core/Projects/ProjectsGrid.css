@@ -1,0 +1,116 @@
+/* SECTION */
+.projects {
+  padding: 90px 0;
+  background: #f5f7fa;
+}
+
+/* CONTAINER */
+.projects-container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px; /* adds side spacing */
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  row-gap: 80px;
+}
+
+/* CARD */
+.project-card {
+  cursor: pointer;
+}
+
+/* MEDIA (IMPORTANT: portrait shape) */
+.media-wrapper {
+  width: 90%;
+  height: 480px; /* 🔥 YOU control this */
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ddd;
+}
+
+/* VIDEO */
+.project-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* HOVER EFFECT */
+.project-card:hover .project-video {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.project-content {
+  margin-top: 18px;
+}
+
+.project-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+  font-family: "Inter", sans-serif;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 95%;
+  font-family: "Inter", sans-serif;
+}
+
+/* PAGINATION */
+.pagination {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* BUTTONS */
+.nav-btn {
+  border: 1px solid #e5e7eb;
+  background: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* PAGE NUMBERS */
+.pages {
+  display: flex;
+  gap: 10px;
+}
+
+.page-number {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #374151;
+}
+
+.page-number.active {
+  background: #e6f0ff;
+  color: #2563eb;
+  font-weight: 600;
+}

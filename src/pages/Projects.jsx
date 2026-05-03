@@ -1,11 +1,13 @@
 import React from 'react';
 import ProjectsHero from '../components/core/Projects/ProjectsHero';
+import ProjectsGrid from '../components/core/Projects/ProjectsGrid';
+
 
 const Projects = () => {
   return (
     <>
       <ProjectsHero />
-      {/* Add more sections below later */}
+      <ProjectsGrid />
     </>
   );
 };
