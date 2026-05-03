@@ -1,0 +1,96 @@
+.cta {
+  background: #02385D;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: "Inter", sans-serif;
+}
+
+/* MAIN CONTAINER */
+.cta-container {
+  width: 980px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LEFT SIDE */
+.cta-left {
+  width: 48%;
+  margin-right: 260px;
+}
+
+.cta-left h2 {
+  font-size: 50px;
+  font-weight: 500;
+  color: #eaf2f7;
+  line-height: 1.15;
+  margin-bottom: 22px;
+  letter-spacing: -0.4px;
+}
+
+.cta-left p {
+  font-size: 18px;
+  color: #b8c9d6;
+  line-height: 1.75;
+  max-width: 440px;
+}
+
+/* REVIEWS */
+.cta-reviews {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+.cta-reviews img:first-child {
+  height: 58px; /* clutch */
+}
+
+.cta-reviews img:last-child {
+  height: 44px; /* goodfirms */
+  opacity: 0.8;
+}
+
+/* RIGHT SIDE */
+.cta-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* EACH ITEM */
+.cta-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+/* ICONS */
+.cta-item img {
+  width: 74px;
+  height: 74px;
+  opacity: 0.7;
+}
+
+/* TEXT */
+.cta-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.cta-item p {
+  font-size: 14px;
+  color: #b8c9d6;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.cta-item span {
+  font-weight: 600;
+  color: #ffffff;
+  margin-right: 6px;
+}
