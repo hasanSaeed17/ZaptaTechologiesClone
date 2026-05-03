@@ -1,0 +1,196 @@
+.projects-hero {
+  position: relative;
+  height: 450px;
+  overflow: hidden;
+
+  /* NEW: vertical layered gradient */
+  background: linear-gradient(
+    to bottom,
+    #0061AC 15%,     /* brighter top */
+    #015A9E 35%,    /* slightly darker */
+    #024F8C 55%,    /* middle */
+    #054578 75%,    /* deeper */
+    #063A66 100%    /* darkest bottom */
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== DECOR BACKGROUND ===== */
+.bg-decor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* DOT GRID */
+.dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 25%;
+  height: 85%;
+
+  pointer-events: none;
+
+  /* MAIN DOT GRID (brighter + larger) */
+  background-image: radial-gradient(rgb(78, 178, 254) 2.2px, transparent 2.2px);
+  background-size: 14px 14px;
+
+  /* ELLIPTICAL FADE (key to matching screenshot) */
+  mask-image: radial-gradient(ellipse at 25% 40%, 
+    rgba(0,0,0,1) 0%, 
+    rgba(0,0,0,0.9) 20%, 
+    rgba(0,0,0,0.6) 40%, 
+    rgba(0,0,0,0.2) 60%, 
+    transparent 80%
+  );
+
+  -webkit-mask-image: radial-gradient(ellipse at 25% 40%, 
+    rgba(0,0,0,1) 0%, 
+    rgba(0,0,0,0.9) 20%, 
+    rgba(0,0,0,0.6) 40%, 
+    rgba(0,0,0,0.2) 60%, 
+    transparent 80%
+  );
+
+  opacity: 0.9;
+}
+
+/* TRIANGLE */
+.triangle {
+  position: absolute;
+  top: 120px;
+  left: 45%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(102, 217, 255, 0.4);
+  transform: rotate(60deg);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* BIG CIRCLE */
+.circle {
+  position: absolute;
+  bottom: -80px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  border: 20px solid rgba(0, 170, 255, 0.2);
+  border-radius: 50%;
+}
+
+/* ARROW */
+.arrow {
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  font-size: 40px;
+  color: rgba(102, 217, 255, 0.3);
+}
+
+/* WAVE */
+.wave {
+  position: absolute;
+  bottom: 60px;
+  left: 25%;
+  width: 60px;
+  height: 20px;
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(102, 217, 255, 0.3),
+    rgba(102, 217, 255, 0.3) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  border-radius: 20px;
+}
+
+/* ===== CANVAS ===== */
+.canvas-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ===== CONTENT ===== */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.breadcrumb {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.9;
+  line-height: 3.6;
+}
+
+.breadcrumb .active {
+  font-weight: 600;
+}
+
+.breadcrumb .arrow-icon {
+  opacity: 1.2;
+  height: 12px;
+}
+
+.hero-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.top-glow {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+
+  width: 460px;
+  height: 460px;
+
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 70%);
+  border-radius: 50%;
+
+  filter: blur(2px);
+}
+.top-dots {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+
+  width: 220px;
+  height: 220px;
+
+  /* smaller + tighter than left dots */
+  background-image: radial-gradient(rgba(255,255,255,0.35) 1.4px, transparent 1.4px);
+  background-size: 10px 10px;
+
+  /* subtle fade */
+  mask-image: radial-gradient(circle, black 40%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle, black 40%, transparent 80%);
+
+  opacity: 0.7;
+}

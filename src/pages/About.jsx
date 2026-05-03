@@ -1,5 +1,11 @@
-const About = () => {
-  return <h1>About Page</h1>;
-};
+import React from 'react';
+import AboutHero from '../components/core/About/AboutHero';
 
+const About = () => {
+  return (
+    <>
+      <AboutHero />
+    </>
+  );
+};
 export default About;
