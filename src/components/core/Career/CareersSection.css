@@ -1,0 +1,139 @@
+.careers-section {
+  background-color: #f3f5f7;
+  padding: 60px 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.careers-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.careers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.careers-header h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+}
+
+.careers-header span {
+  color: #1e73be;
+}
+
+/* FILTERS */
+.careers-filters {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.careers-filters select {
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* SEARCH */
+.search-box {
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+
+.search-box input {
+  border: none;
+  padding: 10px 14px;
+  outline: none;
+  width: 220px;
+}
+
+.search-box button {
+  background: #1e73be;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+/* JOB LIST */
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARD */
+.job-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* LEFT */
+.job-left h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.job-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+/* RIGHT */
+.job-right {
+  text-align: right;
+}
+
+.job-location {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.job-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* BUTTONS */
+.apply-btn {
+  background: #1e73be;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.details-btn {
+  background: transparent;
+  border: 1px solid #1e73be;
+  color: #1e73be;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
