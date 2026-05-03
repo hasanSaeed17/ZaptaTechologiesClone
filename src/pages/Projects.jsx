@@ -1,5 +1,12 @@
-function Projects() {
-  return <h1>Projects Page</h1>;
-}
+import React from 'react';
+import ProjectsHero from '../components/core/Projects/ProjectsHero';
 
+const Projects = () => {
+  return (
+    <>
+      <ProjectsHero />
+      {/* Add more sections below later */}
+    </>
+  );
+};
 export default Projects;
