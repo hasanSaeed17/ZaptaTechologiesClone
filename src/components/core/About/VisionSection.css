@@ -1,0 +1,59 @@
+.vision-section {
+  background-color: #012842;
+  width: 100%;
+  min-height: 420px;
+
+  display: flex;
+  align-items: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+.vision-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 60px 80px;
+  position: relative;
+}
+
+/* LEFT SIDE */
+.vision-left {
+  max-width: 600px;
+}
+
+.vision-left h2 {
+  color: #ffffff;
+  font-size: 44px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.vision-left p {
+  color: #dbe7ee;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* RIGHT SIDE IMAGE */
+.vision-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* THIS is important for matching screenshot */
+.vision-right img {
+  max-width: 420px;
+  height: auto;
+
+  /* anchor image visually lower */
+  transform: translateY(40px);
+}
