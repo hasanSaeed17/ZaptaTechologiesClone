@@ -1,0 +1,80 @@
+.core-values {
+  background-color: #f3f5f7;
+  padding: 70px 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.core-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* TITLE */
+.core-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.core-title span {
+  color: #1e73be;
+}
+
+/* GRID */
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.core-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 28px 30px;
+  position: relative;
+
+  /* subtle shadow like design */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+/* subtle pattern background (like dots/lines) */
+.core-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 80% 20%, rgba(30, 115, 190, 0.08) 2px, transparent 2px),
+                    radial-gradient(circle at 20% 80%, rgba(30, 115, 190, 0.08) 2px, transparent 2px);
+  background-size: 120px 120px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.core-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ICON */
+.core-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.core-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.core-card p {
+  font-size: 14.5px;
+  color: #666;
+  line-height: 1.6;
+}
