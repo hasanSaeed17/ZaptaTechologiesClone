@@ -106,13 +106,19 @@ const Navbar = () => {
               <Link to="/about">About Us</Link>
             </li>
 
-            <li className={isActive("/blogs") ? "active" : ""}>
-              <Link to="/blogs">Blogs</Link>
+            <li className={isActive("/contact") ? "active" : ""}>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+
+            <li className={isActive("/team") ? "active" : ""}>
+              <Link to="/team">Our Team</Link>
             </li>
 
             <li className={isActive("/careers") ? "active" : ""}>
               <Link to="/careers">Careers</Link>
             </li>
+
+
 
           </ul>
         </nav>
