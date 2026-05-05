@@ -4,6 +4,8 @@ import ServicesSection from '../components/core/Home/ServicesSection';
 import TestimonialsSection from '../components/core/Home/TestimonialsSection';
 import ProcessSection from '../components/core/Home/ProcessSection';
 
+import HomeCTA from '../components/core/Home/HomeCTA';
+
 const Home = () => {
   return (
     <>
@@ -11,6 +13,7 @@ const Home = () => {
       <ServicesSection />
       <TestimonialsSection />
       <ProcessSection />
+      <HomeCTA />
     </>
   );
 };
