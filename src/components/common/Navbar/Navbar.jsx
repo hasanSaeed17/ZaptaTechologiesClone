@@ -96,6 +96,7 @@ const Navbar = () => {
 
                 </div>
               </div>
+              
             </li>
 
             <li className={isActive("/projects") ? "active" : ""}>
