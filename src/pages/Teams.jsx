@@ -1,5 +1,13 @@
-const Team = () => {
-  return <h1>Our Team</h1>;
-};
+import React from 'react';
+import TeamHero from '../components/core/Team/TeamHero';
+import TeamSection from '../components/core/Team/TeamSection';
 
-export default Team;
+const Teams = () => {
+  return (
+    <>
+      <TeamHero />
+      <TeamSection />
+    </>
+  );
+};
+export default Teams;

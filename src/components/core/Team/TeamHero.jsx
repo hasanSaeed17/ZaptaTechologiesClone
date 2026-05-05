@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import "./ContactHero.css";
+import "./TeamHero.css";
 
-const ContactHero = () => {
+const TeamHero = () => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -156,22 +156,22 @@ if (mouse.x !== null && mouse.y !== null) {
 
       {/* Content */}
       <div className="hero-content">
-        <h1>Contact Us</h1>
+        <h1>Meet Our Team</h1>
 
         <div className="breadcrumb">
           <span>Home</span>
           <span className="arrow-icon"> › </span>
-          <span className="active">Contact</span>
+          <span className="active">Team</span>
         </div>
 
         <p>
-          We’d love to hear from you. Whether you have a question, a project idea, or need 
-          assistance, our team is here to help. Reach out to us and we’ll get back to you promptly 
-          to discuss how we can support your goals.
+            We are proud to have a team of skilled professionals dedicated to delivering 
+            innovative software solutions. Our collaborative environment fosters growth, creativity, 
+            and continuous learning, empowering individuals to excel and contribute to meaningful projects.
         </p>
       </div>
     </section>
   );
 };
 
-export default ContactHero;
+export default TeamHero;

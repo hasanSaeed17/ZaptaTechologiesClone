@@ -1,0 +1,84 @@
+.team-section {
+  background: #f3f5f7;
+  padding: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* HEADER */
+.team-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.team-section span {
+  color: #1e73be;
+}
+
+.team-sub {
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* TABLE CARD */
+.team-table-wrapper {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* TABLE */
+.team-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEADER */
+.team-table thead {
+  background: #1063a6;
+  color: #fff;
+}
+
+.team-table th {
+  text-align: left;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ROWS */
+.team-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* STRIPED */
+.team-table tbody tr:nth-child(even) {
+  background: #f9fbfd;
+}
+
+/* HOVER */
+.team-table tbody tr:hover {
+  background: #eef5fb;
+}
+
+/* BORDER */
+.team-table tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+/* 🔥 TECH BADGE */
+.tech-badge {
+  background: #e6f0fa;
+  color: #1e73be;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
