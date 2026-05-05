@@ -1,0 +1,122 @@
+.process-section {
+  background: #062f44;
+  color: #fff;
+  padding: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.process-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.process-section h2 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.process-section span {
+  color: #6ea6d6;
+}
+
+.process-sub {
+  color: #c6d7e2;
+  margin-bottom: 60px;
+}
+
+/* SLIDER */
+.process-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.process-track {
+  display: flex;
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.process-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* BLOCK */
+.process-block {
+  width: 45%;
+}
+
+.process-block h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.process-block ul {
+  padding-left: 20px;
+}
+
+.process-block li {
+  margin-bottom: 10px;
+  color: #c6d7e2;
+}
+
+/* VISUAL */
+.visual {
+  position: relative;
+  margin-top: 40px;
+}
+
+.person {
+  width: 200px;
+}
+
+.chart {
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  width: 90px;
+}
+
+/* CURVE */
+.curve {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  opacity: 0.4;
+}
+
+/* CONTROLS */
+.process-controls {
+  position: absolute;
+  right: 40px;
+  bottom: 100px;
+}
+
+.process-controls button {
+  background: #fff;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* PROGRESS */
+.process-progress {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.bar {
+  flex: 1;
+  height: 6px;
+  background: #33596f;
+}
+
+.bar.active {
+  background: #fff;
+}
