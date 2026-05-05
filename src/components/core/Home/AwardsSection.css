@@ -1,0 +1,53 @@
+.awards-section {
+  background: #f3f5f7;
+  padding: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.awards-container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT */
+.awards-left {
+  width: 35%;
+}
+
+.awards-left h2 {
+  font-size: 42px;
+  color: #1e73be;
+  margin-bottom: 20px;
+}
+
+.awards-left p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RIGHT GRID */
+.awards-grid {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+/* IMAGES */
+.awards-grid img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+/* HOVER (subtle like real site) */
+.awards-grid img:hover {
+  transform: scale(1.05);
+}
