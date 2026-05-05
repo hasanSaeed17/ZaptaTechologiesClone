@@ -1,0 +1,89 @@
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    110deg,
+    #082c3f 0%,
+    #0b3a53 40%,
+    #0f4c6b 70%,
+    #0b3a53 100%
+  );
+
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    rgba(8, 44, 63, 0.95) 0%,
+    rgba(8, 44, 63, 0.85) 45%,
+    rgba(8, 44, 63, 0.3) 75%,
+    transparent 100%
+  );
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+  opacity: 0.85;
+}
+
+/* 🔥 WRAPPER (VERY IMPORTANT — prevents layout shift) */
+.hero-title-wrapper {
+  width: 800px; /* lock width EXACT */
+  overflow: hidden;
+}
+
+/* 🔥 SLIDER TRACK */
+.hero-title-slider {
+  display: flex;
+  width: 200%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* EACH SLIDE */
+.hero-title {
+  width: 100%;
+  flex-shrink: 0;
+
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.15;
+
+  margin-bottom: 50px;
+}
+
+/* AWARDS */
+.hero-awards-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-awards {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-awards img {
+  height: 60px;
+  object-fit: contain;
+}
+
